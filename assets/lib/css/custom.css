@@ -1,0 +1,17 @@
+/* overwrite font-family of hooligan theme */
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+ul.post-share.ulno.mob {
+  list-style-type:none;
+  margin:0;
+  padding: 5px;
+}
+ul.post-share.ulno.mob li{
+  float: left;
+  padding: 5px;
+}
+
+h1 code, h2 code, h3 code{
+  font-size: inherit;
+}

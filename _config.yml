@@ -21,7 +21,8 @@ author:
   email: phuonglh0420@gmail.com
   github: yeuem1vannam
   twitter: yeuem1vannam
-#  feedburner : feedname
+  googleplus: phuonglh0420@gmail.com
+  feedburner : yeuem1vannam
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt
@@ -121,9 +122,21 @@ JB :
   # Set 'provider' to false to turn sharing off globally.
   #
   sharing :
-    provider : like
+    provider : all
+    facebook:
+      appid : 1459134404305782
+      layout : button_count
+      font :
+      faces : false
+      width : 90
+    googleplus :
+      size : medium
+      width :
+      annotation : bubble
+    linkedin :
+      counter : right
 
-  # Settings for all other include helpers can be defined by creating 
+            # Settings for all other include helpers can be defined by creating 
   # a hash with key named for the given helper. ex:
   #
   #   pages_list :
