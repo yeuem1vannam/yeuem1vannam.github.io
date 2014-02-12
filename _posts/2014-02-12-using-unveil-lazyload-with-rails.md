@@ -3,7 +3,7 @@ layout: post
 title: "Sử dụng plugin Unveil lazy-load với Rails"
 description: ""
 tagline: javascript
-category: 
+category: posts
 tags: [javascript, ruby on rails]
 ---
 {% include JB/setup %}
