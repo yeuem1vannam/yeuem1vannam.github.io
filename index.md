@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Hello World!
-tagline: Supporting tagline
+tagline: yeuem1vannam
 ---
 {% include JB/setup %}
 
@@ -10,6 +10,12 @@ Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.ht
 Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllbootstrap.com)
 
 ## Update Author Attributes
+
+```ruby
+def my_name
+  puts "Le Hoai Phuong"
+end
+```
 
 In `_config.yml` remember to specify your own data:
     
@@ -42,5 +48,4 @@ Here's a sample "posts list".
 
 This theme is still unfinished. If you'd like to be added as a contributor, [please fork](http://github.com/plusjade/jekyll-bootstrap)!
 We need to clean up the themes, make theme usage guides with theme-specific markup examples.
-
 
