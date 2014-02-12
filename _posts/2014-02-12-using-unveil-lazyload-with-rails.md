@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Sử dụng plugin Unveil lazy-load với Rails"
-description: ""
+description: "unveil, ruby on rails, lazyload"
 tagline: javascript
 category: posts
 tags: [javascript, ruby on rails]
