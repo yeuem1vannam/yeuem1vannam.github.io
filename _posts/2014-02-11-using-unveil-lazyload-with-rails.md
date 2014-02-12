@@ -14,22 +14,21 @@ Viết lại `image_tag` của Rails trong `application_helper.rb`
 ```ruby
 def image_tag(source, options = {})
   options.symbolize_keys!
-  options[:src] = “#”
+  options[:src] = "#"
   src = options["data-src"] = path_to_image(source)
   unless src =~ /^(?:cid|data):/ || src.blank?
     options[:alt] = options.fetch(:alt){ image_alt(src) }
   end
 
   size = options.delete(:size) and if size =~ %r{^\d+x\d+$}
-    options[:width], options[:height] = size.split(“x”)
+    options[:width], options[:height] = size.split("x")
   end
 
   if mouseover = options.delete(:mouseover)
-    options[:onmouseover] = ”this.src=’#{path_to_image(mouseover)}’”
-    options[:onmouseover] = ”this.src=’#{path_to_image(mouseover)}’”
+    options[:onmouseover] = "this.src='#{path_to_image(mouseover)}'"
   end
 
-  tag(“img”, options)
+  tag("img", options)
 end
 ```
 
@@ -44,7 +43,7 @@ và chạy plugin
 ```javascript
 $(document).ready(function() {
     // Image lazy load plugin Unveil
-    $(“img”).unveil();
+    $("img").unveil();
 });
 ```
 Enjoy!
