@@ -1,0 +1,47 @@
+<div id="fb-root"></div>
+
+<ul class="post-share ulno mob">
+<!-- Facebook -->
+<li class="fb"><div class="fb-follow" data-layout="{{ site.JB.follow.facebook.layout }}" data-width="{{ site.JB.follow.facebook.width }}" data-show-faces="{{ site.JB.follow.facebook.faces }}" data-font="{{ site.JB.follow.facebook.font }}" data-href="http://www.facebook.com/{{ site.JB.follow.facebook.username }}></div></li>
+
+<!-- Twitter -->
+<li class="tw"><a href="https://twitter.com/{{ site.JB.follow.twitter.username }}" class="twitter-follow-button" data-show-count="{{ site.JB.follow.twitter.showcount }}" data-lang="en-gb" data-dnt="true">Follow @{{ site.JB.follow.twitter.username }}</a></li>
+
+<!-- Google+ -->
+<li class="gp"><div class="g-follow" data-annotation="{{ site.JB.follow.googleplus.annotation }}" data-height="{{ site.JB.follow.googleplus.height }}" data-href="//plus.google.com/{{ site.JB.follow.googleplus.gid }}" data-rel="author"></div></li>
+
+</ul>
+
+<script>
+
+(function(doc, script) {
+
+    // Async Social Buttons
+    var js,
+        fjs = doc.getElementsByTagName(script)[0],
+        add = function(url, id) {
+            if (doc.getElementById(id)) {return;}
+            js = doc.createElement(script);
+            js.src = url;
+            id && (js.id = id);
+            fjs.parentNode.insertBefore(js, fjs);
+        };
+
+    // Twitter SDK
+    add('//platform.twitter.com/widgets.js', 'twitter-wjs');
+
+    // Google+ button
+    add('https://apis.google.com/js/plusone.js');
+
+    // Facebook SDK
+    add('//connect.facebook.net/en_GB/all.js#xfbml=1&appId={{ site.JB.sharing.facebook.appid }}', 'facebook-jssdk');
+
+}(document, 'script'));
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=1459134404305782";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>

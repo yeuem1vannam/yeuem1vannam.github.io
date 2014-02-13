@@ -1,0 +1,10 @@
+{% if site.safe and site.JB.follow.provider and page.JB.follow != false %}
+
+{% case site.JB.follow.provider %}
+{% when "all" %}
+  {% include JB/follow-providers/global %}
+{% when "custom" %}
+  {% include custom/follow %}
+{% endcase %}
+
+{% endif %}

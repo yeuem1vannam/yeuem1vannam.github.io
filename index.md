@@ -14,4 +14,4 @@ end
 ```
 ## Posts
 {% assign posts = site.posts %}
-{% include JB/additional/index_thumbnail %}
+{% include JB/additional/index_thumbnail.html %}

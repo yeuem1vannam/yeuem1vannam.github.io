@@ -4,14 +4,14 @@
     <div class="thumbnail">
       <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
       <p class="thumb-des">{{ post.date | date: "%B %e, %Y" }}</p>
-{% unless post.tags == empty %}
-  {% assign tags_list = post.tags %}
-  <ul class="tag_box inline">
-    {% include JB/tags_list %}
-  </ul>
-{% endunless %}
-</div>
-</li>
+      {% unless post.tags == empty %}
+        {% assign tags_list = post.tags %}
+        <ul class="tag_box inline">
+          {% include JB/tags_list %}
+        </ul>
+      {% endunless %}
+    </div>
+  </li>
 {% endfor %}
 </ul>
 {% assign posts = nil %}

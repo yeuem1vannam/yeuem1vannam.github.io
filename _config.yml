@@ -1,6 +1,6 @@
 # This is the default format. 
 # For more see: http://jekyllrb.com/docs/permalinks/
-permalink: /:categories/:title 
+permalink: /:title 
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 pygments: true
@@ -121,6 +121,24 @@ JB :
   # Set 'provider' to the sharing provider you want to use.
   # Set 'provider' to false to turn sharing off globally.
   #
+  follow:
+    provider : all
+    facebook:
+      appid : 1459134404305782
+      username: yeuem1vannam
+      layout : button_count
+      font :
+      faces : false
+      width : 50
+    googleplus :
+      gid: 102717131394874333583
+      size : medium
+      height: 20
+      annotation : bubble
+    twitter:
+      username: yeuem1vannam
+      showcount: false
+
   sharing :
     provider : all
     facebook:

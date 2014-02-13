@@ -30,3 +30,6 @@ h1 code, h2 code, h3 code{
   height: 42px;
   overflow: hidden;
 }
+.thumbnails .thumbnail .tag_box li{
+  font-size: 10px;
+}
