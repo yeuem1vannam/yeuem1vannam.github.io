@@ -15,3 +15,18 @@ ul.post-share.ulno.mob li{
 h1 code, h2 code, h3 code{
   font-size: inherit;
 }
+
+.thumbnails .thumbnail h3{
+  height: 55px;
+  overflow: hidden;
+}
+.thumbnails .thumbnail p.thumb-des{
+  text-align: right;
+  padding: initial;
+  line-height: initial;
+  margin: initial;
+}
+.thumbnails .thumbnail .tag_box{
+  height: 42px;
+  overflow: hidden;
+}
