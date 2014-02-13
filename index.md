@@ -12,3 +12,6 @@ def my_name
   puts "Le Hoai Phuong"
 end
 ```
+## Posts
+{% assign posts = site.posts %}
+{% include JB/additional/index_thumbnail %}
