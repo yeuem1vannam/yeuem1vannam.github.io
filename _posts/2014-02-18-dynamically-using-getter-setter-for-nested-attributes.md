@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Sử dụng linh hoạt getter/setter với nested_attributes"
-description: ""
+description: "ruby on rails, rails, nested attributes, getter, setter, dynamically, has_one, has_many, belongs_to, attr_reader, attr_writter, attr_accessor, attr_accessible, assign, one_on_one, collection, association"
 tagline: "Ruby on Rails"
 category: posts
 tags: [ruby on rails, nested attributes]
@@ -15,7 +15,7 @@ Tuy nhiên, không phải lúc nào sử dụng `nested_attributes` cũng dễ d
 
 Bài toán khó đặt ra là việc sửa lại `nested_attributes` mặc định của Rails để phù hợp với mục đích sử dụng của chúng ta, thì việc vận hành, bảo trì và nâng cấp phiên bản cho hệ thống sẽ trở nên nhiều rủi ro hơn, và phức tạp hơn.
 
-Bài viết dưới đây là 1 cách sử dụng những thứ cơ bản có sẵn của Rails để hỗ trợ `nested_attributes` trong 1 trường hợp đặc biệt nhưng rất hay xảy ra trong các dự án Rails: Sử dụng getter/setter một cách mềm dẻo để giải quyết vấn đề đầu vào của `nested_attributes` không theo chuẩn Cha-con.
+Bài viết dưới đây là 1 cách sử dụng những thứ cơ bản có sẵn của Rails để hỗ trợ `nested_attributes` trong 1 trường hợp đặc biệt nhưng rất hay xảy ra trong các dự án Rails: Sử dụng getter/setter một cách mềm dẻo để giải quyết vấn đề đầu vào của `nested_attributes` không theo chuẩn `Parent-Child`.
 
 1. ##Rails Setter/Getter
 
@@ -117,9 +117,9 @@ Bài viết dưới đây là 1 cách sử dụng những thứ cơ bản có s�
 
   Qua phần 1 và 2, ta có thể hiểu sơ qua được cặp setter/getter và `nested_attributes`. Vậy sử dụng mềm dẻo setter/getter trong `nested_attributes` để làm gì?
   >1. Khi project yêu cầu mức độ bảo mật cao hơn, bạn phải đưa việc load/init objects vào trong model ( không load/init objects trong controller giống như Rails document)
-  >2. Khi bạn phải làm việc với bộ objects không thật sự theo chuẩn Cha-con mà `nested_attributes` yêu cầu, khi đó vấn đề xuất hiện
+  >2. Khi bạn phải làm việc với bộ objects không thật sự theo chuẩn `Parent-Child` mà `nested_attributes` yêu cầu, khi đó vấn đề xuất hiện
 
-      >>1.  `nested_attributes` không hoạt động khi object Cha chưa được save
+      >>1.  `nested_attributes` không hoạt động khi `Parent Object` chưa được save
       >>2.  Rất khó để quản lý các association, vì phải làm việc với 3 hoặc hơn các Class liên quan
       >>3.  Rất khó và rất yếu về bảo mật khi bạn chỉ muốn làm việc với 1 lượng hữu hạn được chỉ định các objects
 
