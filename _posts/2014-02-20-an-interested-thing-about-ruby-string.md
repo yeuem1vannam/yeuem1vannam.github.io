@@ -54,8 +54,9 @@ tagline: "Ruby on Rails"
 
 - - -
 ## Tham khảo
-  1.  {% ref_url http://www.ruby-doc.org/stdlib-2.1.0/libdoc/bigdecimal/rdoc/String.html %}
-  2.  {% ref_url http://patshaughnessy.net/2012/1/4/never-create-ruby-strings-longer-than-23-characters %}
+
+  1.  [http://www.ruby-doc.org/](http://www.ruby-doc.org/stdlib-2.1.0/libdoc/bigdecimal/rdoc/String.html)
+  2.  [http://patshaughnessy.net/](http://patshaughnessy.net/2012/1/4/never-create-ruby-strings-longer-than-23-characters)
 
 - - -
 ### Note

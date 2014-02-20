@@ -4,7 +4,7 @@ permalink: /:categories/:title
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 pygments: true
-safe: false # set to true to enable sharing
+safe: true # set to true to enable sharing
 lsi: false
 source: .
 markdown: redcarpet
