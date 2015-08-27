@@ -8,10 +8,10 @@
             <li>{% if link.external %}
                     <a href="{{ link.url }}">{{ link.title }}</a>
                 {% else %}
-                    <a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a>
+                    <a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
                 {% endif %} </li>
 {% endfor %}            
-           <li><a href="{{ site.url }}/feed.xml" title="Atom/RSS feed"><i class="icon-rss"></i> Feed</a></li>
+           <li><a href="{{ site.baseurl }}/feed.xml" title="Atom/RSS feed"><i class="icon-rss"></i> Feed</a></li>
     </nav>
     
     
@@ -29,7 +29,7 @@
 {% if page.headline %}
     <div class="inner">
         <div class="container">
-            <a class="brand light" href="{{ site.url }}" role="banner" itemprop="url">
+            <a class="brand light" href="{{ site.baseurl }}" role="banner" itemprop="url">
 
                 {% if site.logo %}<img itemprop="logo" src="{{ site.asset_url }}/images/{{ site.logo }}" alt="{{ site.title }} Logo" />{% endif %}
 
@@ -46,7 +46,7 @@
     {% else %}
     <div class="inner">
         <div class="container">
-            <a class="brand" href="{{ site.url }}" role="banner" itemprop="url">
+            <a class="brand" href="{{ site.baseurl }}" role="banner" itemprop="url">
 
                 {% if site.logo %}<img itemprop="logo" src="{{ site.asset_url }}/images/{{ site.logo }}" alt="{{ site.title }} Logo" />{% endif %}
 
