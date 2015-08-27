@@ -1,12 +1,12 @@
 ---
 layout: post
 title: "Sử dụng plugin Unveil lazy-load với Rails"
-description: "unveil, ruby on rails, lazyload"
+description: "Kết hợp Lazy load với Rails rất đơn giản"
 tagline: javascript
 category: posts
 tags: [javascript, ruby on rails]
-important: true
 comments: true
+# imagefeature: Images-Lazy-Load.png
 image:
   feature: Images-Lazy-Load.png
   credit: External

@@ -16,14 +16,15 @@ animated_fins:	  true
 # Specify the fin color in RGB value
 fin_color:        "255,255,255"
 # Change url to your domain. Leave localhost server or blank when working locally.
-# or use the hint from http://jekyllrb.com/docs/github-pages/ to keep this the same 
+# or use the hint from http://jekyllrb.com/docs/github-pages/ to keep this the same
 # whether working locally or remotely. Start Jekyll with: jekyll serve --baseurl ''
-url:
+baseurl: http://yeuem1vannam.github.io
+asset_url:
 
 # Owner/author information
 owner:
   name:           Le Hoai Phuong
-  avatar:         my_avatar.jpg
+  avatar:         my_avatar.png
   email:          phuonglh0420@gmail.com
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
   description:    Awesome!
@@ -77,7 +78,8 @@ redcarpet:
     - highlight
     - quote
     - footnotes
-# markdown:    kramdown
+    - tables
+      # - with_toc_data
 paginate:    5
 paginate_path: "page:num"
 
@@ -90,15 +92,16 @@ sass:
   sass_dir: _sass
   style: compressed
 
+# markdown:    kramdown
 # kramdown:
 #   auto_ids: true
 #   footnote_nr: 1
+#   input: GFM
 #   entity_output: as_char
 #   toc_levels: 1..6
-#   use_coderay: false
-# 
+#   use_coderay: true
 #   coderay:
-#     coderay_line_numbers: 
+#     coderay_line_numbers: true
 #     coderay_line_numbers_start: 1
 #     coderay_tab_width: 4
 #     coderay_bold_every: 10
@@ -106,8 +109,8 @@ sass:
 
 prose:
   rooturl: '_posts'
-  siteurl: 'http://hmfaysal.github.io/'
-  relativeLinks: 'http://hmfaysal.github.io/links.jsonp'
+  siteurl: 'http://yeuem1vannam.github.io/'
+  relativeLinks: 'http://yeuem1vannam.github.io/links.jsonp'
   media: 'images'
   metadata:
     _posts:

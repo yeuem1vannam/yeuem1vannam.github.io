@@ -57,6 +57,14 @@ h6 {
   text-transform: uppercase;
   margin: 0;
 }
+article {
+  h2, h3, h4, h5, h6{
+    text-transform: uppercase;
+    code {
+      text-transform: none;
+    }
+  }
+}
 /* - Links - */
 a {
   text-decoration: none;
@@ -91,9 +99,9 @@ blockquote:before {
   width: 4px;
 }
 .cursive {
-  font-family: 'Sacramento', cursive;
+  font-family: 'Open Sans Condensed', sans-serif;
   color: #17e4d8;
-  font-size: 34px;
+  font-size: 16px;
   text-align: center;
 }
 /* - Form elements - */
@@ -757,21 +765,11 @@ body button {
 .lead {
   font-weight: 400;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   // font-family: 'Raleway', sans-serif;
   font-family: $heading-font;
 }
-h1.lighter,
-h2.lighter,
-h3.lighter,
-h4.lighter,
-h5.lighter,
-h6.lighter {
+h1.lighter, h2.lighter, h3.lighter, h4.lighter, h5.lighter, h6.lighter {
   font-weight: 200 !important;
 }
 /* ---------- */

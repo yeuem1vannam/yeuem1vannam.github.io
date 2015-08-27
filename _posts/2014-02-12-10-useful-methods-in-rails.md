@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "10 methods hữu dụng trong ActiveRecord::Relation"
-description: "ruby on rails, ruby on rails 4, activerecord"
 category: posts
 tags: [ruby on rails, ruby on rails 4, activerecord]
 image:

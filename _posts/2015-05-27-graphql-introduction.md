@@ -1,10 +1,12 @@
 ---
 layout: post
-title: "GraphQL Introduction"
-description: "Một cái nhìn sơ khai về GraphQL của Facebook"
+title: GraphQL Introduction
+description: Một cái nhìn sơ khai về GraphQL của Facebook
 modified: 2015-08-26 16:09:49 +0700
 tags: [graphql, facebook, react]
 category: posts
+# type: status
+# headline: "AADWAD"
 image:
   feature:
   credit:

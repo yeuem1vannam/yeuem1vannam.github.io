@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Một điều thú vị về String trong Ruby"
-description: "ruby on rails, ruby, string, 23 characters, interesting, benchmark"
+description: Đôi khi những điều nhỏ bé lại làm chúng ta bất ngờ
 category: posts
 tags: [ruby on rails, ruby]
 tagline: "Ruby"
