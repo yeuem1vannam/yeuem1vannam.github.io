@@ -6,6 +6,7 @@ tagline: javascript
 category: posts
 tags: [javascript, ruby on rails]
 important: true
+comments: true
 image:
   feature: Images-Lazy-Load.png
   credit: External

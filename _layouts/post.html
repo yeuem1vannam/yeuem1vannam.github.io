@@ -4,15 +4,16 @@
 {% include head.html %}
 </head>
 <body class="post-template" itemscope itemtype="http://schema.org/WebPage">  
+{% include search.html %}
 {% include header.html %}
 <div id="main" class="content" role="main" itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/Blog">
     <div class="container">
         <div class="row">
             <article class="post col-md-8 col-md-offset-2 hentry" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
             {% if site.wpm %}
-            {% assign readtime = page.content | strip_html | number_of_words | append: '.0' | divided_by:site.wpm %}
+              {% assign readtime = page.content | strip_html | number_of_words | append: '.0' | divided_by:site.wpm %}
             {% else %}
-            {% assign readtime = page.content | strip_html | number_of_words | append: '.0' | divided_by:180 %}
+              {% assign readtime = page.content | strip_html | number_of_words | append: '.0' | divided_by:180 %}
             {% endif %}
             {% assign modifiedtime = page.modified | date: "%Y%m%d" %}
             {% assign posttime = page.date | date: "%Y%m%d" %}
@@ -39,9 +40,9 @@
                     {% assign tagsize = page.tags.size %}
                     {% if tagsize != 0 %}
                     <div class="entry-tags text-center">
-                    
+
                         <i class="icon-tags"></i>&nbsp;Tagged with {% for tag in page.tags %}<a href="{{ site.url }}/tags/index.html#{{ tag | cgi_encode }}" data-toggle="tooltip" title="Posts tagged with {{ tag }}" rel="tag">{{ tag }}</a>{% unless forloop.last %}&nbsp;&bull;&nbsp;{% endunless %}{% endfor %}
-                    
+
                     </div>
                     {% endif %}
                     </div>
@@ -56,7 +57,7 @@
 </div>
 {% include footer.html %}
 
-    
-{% include scripts.html %} 
+
+{% include scripts.html %}
 </body>
 </html>

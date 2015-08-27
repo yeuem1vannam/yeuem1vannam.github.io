@@ -5,6 +5,7 @@ description: "ruby on rails, ruby, string, 23 characters, interesting, benchmark
 category: posts
 tags: [ruby on rails, ruby]
 tagline: "Ruby"
+comments: true
 image:
   feature: ruby-strings.png
   credit: yeuem1vannam
@@ -13,7 +14,7 @@ image:
 
 - - -
 
-##`Ruby String` và giới hạn 23 ký tự
+## `Ruby String` và giới hạn 23 ký tự
   Một bài test đơn giản về `Benchmark` với `String` của `Ruby` (v 1.9 +)
 
 <!-- more -->
@@ -54,15 +55,15 @@ image:
   ```
   Dễ dàng nhận thấy là với `string` dưới 23 ký tự và trên 23 ký tự có sự khác biệt lớn khi khởi tạo.
 
-###Vì sao?
+### Vì sao?
 
 - - -
-##Tham khảo
+## Tham khảo
 
   1.  [http://www.ruby-doc.org/](http://www.ruby-doc.org/stdlib-2.1.0/libdoc/bigdecimal/rdoc/String.html)
   2.  [http://patshaughnessy.net/](http://patshaughnessy.net/2012/1/4/never-create-ruby-strings-longer-than-23-characters)
 
 - - -
-###Note
+### Note
 
   *Bài viết chỉ để chia sẻ những điều thú vị về Ruby*
