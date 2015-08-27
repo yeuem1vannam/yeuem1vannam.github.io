@@ -1,5 +1,5 @@
-{% if page.imagefeature %}
-<footer id="footer"  class="blog-background overlay text-center align-middle animated from-top" style="background-image: url({{ site.asset_url }}/images/{{ page.imagefeature }})" >
+{% if page.image and page.image.feature %}
+<footer id="footer"  class="blog-background overlay text-center align-middle animated from-top" style="background-image: url({{ site.asset_url }}/images/{{ page.image.feature }})" >
 {% else %}
 <footer id="footer"  class="blog-background overlay text-center align-middle animated from-top" style="background-image: url({{ site.asset_url }}/images/{{ site.default_bg }})" >
 {% endif %}

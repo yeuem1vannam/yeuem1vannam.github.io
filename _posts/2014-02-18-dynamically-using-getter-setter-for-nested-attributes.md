@@ -11,10 +11,6 @@ image:
   credit: yeuem1vannam
   creditlink: http://yeuem1vannam.github.io
 ---
-
-* TOC
-{:toc}
-
 `nested_attributes` là 1 tính năng rất mạnh của Rails, được bắt đầu build từ 31/01/2009, cho tới nay, nó đã trở nên khá hoàn hảo với Rails.
 
 Tuy nhiên, không phải lúc nào sử dụng `nested_attributes` cũng dễ dàng và đúng với mong muốn của người coder, nhất là khi người coder muốn sử dụng `nested_attributes` với 1 hệ thống đầu vào không hoàn toàn đúng theo chuẩn của `nested_attributes`

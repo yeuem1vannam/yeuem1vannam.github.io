@@ -7,8 +7,9 @@ tags: [graphql, facebook, react]
 category: posts
 # type: status
 # headline: "AADWAD"
+# imagefeature: graphql.png
 image:
-  feature:
+  feature: graphql.png
   credit:
   creditlink:
 comments: true

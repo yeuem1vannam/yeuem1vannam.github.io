@@ -16,11 +16,11 @@
     
     
 </aside>
-{% if page.imagefeature %}
-<header id="masthead" class="blog-background overlay align-center align-middle animated from-bottom"  style="background-image: url({{ site.asset_url }}/images/{{ page.imagefeature }})" itemscope itemtype="http://schema.org/Organization">
-  {% if page.imagecredit %}
+{% if page.image and page.image.feature %}
+<header id="masthead" class="blog-background overlay align-center align-middle animated from-bottom"  style="background-image: url({{ site.asset_url }}/images/{{ page.image.feature }})" itemscope itemtype="http://schema.org/Organization">
+  {% if page.image.credit %}
   <span class="image-credit">
-    Photo Credit: <a href="{{ page.imagecreditlink }}" target="_blank">{{ page.imagecredit }}</a>
+    Photo Credit: <a href="{{ page.image.creditlink }}" target="_blank">{{ page.imagecredit }}</a>
   </span>
   {% endif %}
 {% else %}

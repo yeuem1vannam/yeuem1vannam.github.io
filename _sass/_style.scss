@@ -57,6 +57,15 @@ h6 {
   text-transform: uppercase;
   margin: 0;
 }
+.row-fluid.image-fluid{
+  margin: 20px -200px;
+  max-height: 200px;
+  overflow: hidden;
+  text-align: center;
+  img{
+    border-radius: 0;
+  }
+}
 article {
   h2, h3, h4, h5, h6{
     text-transform: uppercase;
