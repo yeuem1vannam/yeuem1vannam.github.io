@@ -14,7 +14,7 @@ comments: true
 share: true
 mathjax:
 ---
-*CDN*[^1]  đã trở thành một công cụ được sử dụng ở mọi nơi, với mong muốn tăng
+*CDN*[^1] đã trở thành một công cụ được sử dụng ở mọi nơi, với mong muốn tăng
 tốc độ chuyển thông tin đến cho người dùng cuối.  
 Tuy nhiên, việc cấu hình CDN không phải lúc nào cũng dễ dàng, trong một số
 trường hợp còn trở thành một thay đổi lớn với dự án của bạn.  

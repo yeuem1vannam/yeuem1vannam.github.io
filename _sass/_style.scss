@@ -57,24 +57,6 @@ h6 {
   text-transform: uppercase;
   margin: 0;
 }
-.row-fluid.image-fluid{
-  margin: 20px -200px;
-  max-height: 200px;
-  overflow: hidden;
-  text-align: center;
-  img{
-    border-radius: 0;
-  }
-}
-article {
-  h2, h3, h4, h5, h6{
-    text-transform: uppercase;
-    code {
-      text-transform: none;
-      font-size: inherit;
-    }
-  }
-}
 /* - Links - */
 a {
   text-decoration: none;
@@ -4044,4 +4026,31 @@ body.slide{
     a#slide{
       position: absolute;
     }
+}
+.row-fluid.image-fluid{
+  margin: 20px -200px;
+  max-height: 200px;
+  overflow: hidden;
+  text-align: center;
+  img{
+    border-radius: 0;
+  }
+}
+article {
+  h2, h3, h4, h5, h6{
+    text-transform: uppercase;
+    code {
+      text-transform: none;
+      font-size: inherit;
+    }
+  }
+}
+.footnotes:before{
+  display: block;
+  content: "References";
+  font-size: 26px;
+  line-height: 24px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  text-transform: uppercase;
 }
