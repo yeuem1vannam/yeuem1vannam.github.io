@@ -31,7 +31,7 @@
         <div class="container">
             <a class="brand light" href="{{ site.baseurl }}" role="banner" itemprop="url">
 
-                {% if site.logo %}<img itemprop="logo" src="{{ site.asset_url }}/images/{{ site.logo }}" alt="{{ site.title }} Logo" />{% endif %}
+                {% if site.logo %}<img itemprop="logo" data-cdn-src="{{ site.asset_url }}/images/{{ site.logo }}" src="http://assets.swarmcdn.com/images/1x1.gif" alt="{{ site.title }} Logo" />{% endif %}
 
             <h1 class="blog-title light" itemprop="name">
                 {{ site.title }}
@@ -48,7 +48,7 @@
         <div class="container">
             <a class="brand" href="{{ site.baseurl }}" role="banner" itemprop="url">
 
-                {% if site.logo %}<img itemprop="logo" src="{{ site.asset_url }}/images/{{ site.logo }}" alt="{{ site.title }} Logo" />{% endif %}
+                {% if site.logo %}<img itemprop="logo" data-cdn-src="{{ site.asset_url }}/images/{{ site.logo }}" src="http://assets.swarmcdn.com/images/1x1.gif" alt="{{ site.title }} Logo" />{% endif %}
 
             <h1 class="blog-title light" itemprop="name">
                 {{ site.title }}
