@@ -8,7 +8,7 @@
 {% assign posttime = post.date | date: "%Y%m%d" %}
 {% if post.image and post.image.feature %}
   <div class="row-fluid image-fluid">
-    <img src="http://assets.swarmcdn.com/images/1x1.gif" data-cdn-src="{{ site.baseurl }}/images/{{ post.image.feature }}" />
+    <div> <img src="http://assets.swarmcdn.com/images/1x1.gif" data-cdn-src="{{ site.baseurl }}/images/{{ post.image.feature }}" /></div>
   </div>
 {% endif %}
 <div class="row">

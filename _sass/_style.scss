@@ -759,7 +759,8 @@ body button {
 }
 h1, h2, h3, h4, h5, h6 {
   // font-family: 'Raleway', sans-serif;
-  font-family: $heading-font;
+  // font-family: $heading-font;
+  font-family: $base-font;
 }
 h1.lighter, h2.lighter, h3.lighter, h4.lighter, h5.lighter, h6.lighter {
   font-weight: 200 !important;
@@ -4028,12 +4029,14 @@ body.slide{
     }
 }
 .row-fluid.image-fluid{
-  margin: 20px -200px;
   max-height: 200px;
   overflow: hidden;
   text-align: center;
-  img{
-    border-radius: 0;
+  div {
+    margin: 20px -200px;
+    img{
+      border-radius: 0;
+    }
   }
 }
 article {
