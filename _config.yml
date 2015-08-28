@@ -83,8 +83,8 @@ redcarpet:
     - tables
     # - link_attributes
     # - with_toc_data
-paginate:    5
-paginate_path: "page/num"
+paginate:    3
+paginate_path: "/page/:num"
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink:   /:categories/:title
