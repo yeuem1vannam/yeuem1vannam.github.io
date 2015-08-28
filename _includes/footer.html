@@ -98,3 +98,6 @@
     {% endif %}
     {% endif %}
 </footer>
+{% if page.comments %}
+  {% include disqus_comments.html %}
+{% endif %}
