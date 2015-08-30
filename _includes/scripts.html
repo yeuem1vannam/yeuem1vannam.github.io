@@ -1,74 +1,22 @@
+<!-- Swarmify -->
+<script>
+  var swarmcdnkey = "f0c9e7da-5e98-4f50-80a0-f35686dac640";
+  var swarmimagescan = true;
+</script>
+<script src="//assets.swarmcdn.com/swarmdetect.js"></script>
+
 {% unless page.no_ad %}
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
   (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 {% endunless %}
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="{{ site.asset_url }}/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="{{ site.asset_url }}/assets/js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="{{ site.asset_url }}/assets/js/waypoints.min.js"></script>
 <script src="{{ site.asset_url }}/assets/js/scripts.min.js"></script>
-<script src="{{ site.asset_url }}/assets/js/script.js"></script>
-<script type='text/javascript'>$(document).ready(function(){$(".time").text(function(a,b){return Math.round(parseFloat(b))})});</script>
-
-<script type="text/javascript">
-
-/*      Slides       */
-
-$("a#slide").click(function(){
-    $("#sidebar,body,a#slide,#fade").addClass("slide")
-});
-
-$("#fade,#header,#posts-container").click(function(){
-    $("#sidebar,body,a#slide,#fade").removeClass("slide")
-});
-
-$("a#click-filter").click(function(){
-    $("#slide-filter").slideToggle("medium");
-    $("#slide-pages").slideOut("medium");
-});
-
-$("a#click-pages").click(function(){
-    $("#slide-pages").slideToggle("medium");
-    $("#slide-filter").slideOut("medium");
-});
-
-/*      End-Slides      */
-
-</script>
-
-{% if site.search %}
-<!-- Jekyll Simple Search option -->
-<script>
-  $(document).ready(function() {
-    $('.search-field').simpleJekyllSearch({
-      jsonFile : '/search.json',
-      searchResults : '.search-results',
-      template : '<li><article><a href="{url}">{title} <span class="entry-date"><time datetime="{date}">{shortdate}</time></span></a></article></li>',
-      noResults: '<p>Nothing found.</p>'
-    });
-  });
-
-  (function( $, window, undefined ) {
-    var bs = {
-        close: $(".icon-remove-sign"),
-        searchform: $(".search-form"),
-        canvas: $("body"),
-        dothis: $('.dosearch')
-    };
-    bs.dothis.on('click', function() {
-      $('.search-wrapper').css({ display: "block" });
-      bs.searchform.toggleClass('active');
-      bs.searchform.find('input').focus();
-      bs.canvas.toggleClass('search-overlay');
-    });
-    bs.close.on('click', function() {
-      $('.search-wrapper').removeAttr( 'style' );
-      bs.searchform.toggleClass('active');
-      bs.canvas.removeClass('search-overlay');
-    });
-  })( jQuery, window );
-</script>
-{% endif %}
+<script src="{{ site.asset_url }}/assets/js/yeuem1vannam.js"></script>
 {% if site.google_analytics %}
 <!-- Asynchronous Google Analytics snippet -->
 <script>
