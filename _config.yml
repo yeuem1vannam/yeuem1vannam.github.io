@@ -63,6 +63,10 @@ links:
     url: /tags
   - title: About me
     url: /about
+  - title: Privacy Policy
+    url: /privacy-policy
+  - title: Terms and Conditions
+    url: /terms-and-conditions
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Asia/Ho_Chi_Minh
