@@ -55,8 +55,9 @@ links:
     url: /
     external: false
     icon: home
-  # - title: <i class="icon-book"></i> Documentation
+  # - title: Documentation
   #   url: /documentation
+  #   icon: book
   - title: Categories
     url: /categories
   - title: Tags
