@@ -5,12 +5,14 @@
 </script>
 <script src="//assets.swarmcdn.com/swarmdetect.js"></script>
 
-{% unless page.no_ad %}
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-{% endunless %}
+{% if site.google_ads %}
+  {% unless page.no_ad %}
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+  {% endunless %}
+{% endif %}
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="{{ site.asset_url }}/assets/js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>

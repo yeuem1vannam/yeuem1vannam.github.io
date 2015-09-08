@@ -189,7 +189,9 @@ tags: [yeuem1vannam]
 			{% endif %}
 	{% endfor %}
 
+  {% if site.google_ads %}
   {% include google_ad2.html %}
+  {% endif %}
 
   {% include paginator.html %}
 {% else %}

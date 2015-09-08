@@ -30,7 +30,9 @@
                             in <span class="post-tags">{% for tag in page.categories %}<a href="{{ site.url }}/categories/index.html#{{ page.categories | cgi_encode }}" data-toggle="tooltip" title="Other posts from the {{ tag | capitalize }} category" rel="tag">{{ tag | capitalize }}</a>{% unless forloop.last %}&nbsp;&bull;&nbsp;{% endunless %}{% endfor %}</span>{% if site.readtime %}&nbsp;<span class="post-tags"><i class="icon-time"></i>&nbsp;{% if readtime > 1 and readtime < 1.5 %}1 minute read{% endif %}{% if readtime > 1.5 %}<span class="time">{{ readtime }}</span> minutes read{% endif %}{% if readtime < 1 %}Less than 1 minute read{% endif %}</span>{% endif %}
                         </div>
                     </header>
+{% if site.google_ads %}
 {% include google_ad1.html %}
+{% endif %}
                     <div class="post-body bordered-bottom" itemprop="description">
                         {% if page.video %}
                         {% assign video_embed = page.video | remove:'https://www.youtube.com/watch?v=' %}
